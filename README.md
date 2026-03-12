@@ -176,12 +176,18 @@ Capturas reales del sistema en funcionamiento:
 
 ![Evidencia 4](docs/evidence/foto4.png)
 
----
-
-## 🧑‍💻 Desarrollado para Produccion
-
-Sistema preparado para escalar por camaras y adaptarse a entornos industriales.
 
 ---
 
-© 2026 - Sistema de Monitoreo de Casco. Todos los derechos reservados.
+## 👨‍💻 Desarrollado por Isaac Esteban Haro Torres
+
+**Ingeniero en Sistemas · Full Stack · Automatización · Data**
+
+- 📧 Email: zackharo1@gmail.com
+- 📱 WhatsApp: 098805517
+- 💻 GitHub: https://github.com/ieharo1
+- 🌐 Portafolio: https://ieharo1.github.io/portafolio-isaac.haro/
+
+---
+
+© 2026 Isaac Esteban Haro Torres - Todos los derechos reservados.
