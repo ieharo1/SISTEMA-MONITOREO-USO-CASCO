@@ -166,8 +166,6 @@ project/
 
 Capturas reales del sistema en funcionamiento:
 
-[Image #1]
-
 ![Evidencia 1](docs/evidence/foto1.png)
 
 ![Evidencia 2](docs/evidence/foto2.png)
