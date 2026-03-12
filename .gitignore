@@ -1,0 +1,13 @@
+.env
+.env.*
+
+# Python virtual environments
+.venv/
+venv/
+ENV/
+env/
+**/.venv/
+
+# Logs and runtime artifacts
+*.log
+*.errors.txt

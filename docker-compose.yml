@@ -1,0 +1,44 @@
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  web:
+    build:
+      context: ./backend
+    env_file: .env
+    depends_on:
+      - postgres
+    volumes:
+      - ./media:/app/media
+      - ./models:/app/models
+    ports:
+      - "8000:8000"
+
+  detector:
+    build:
+      context: ./detector
+    env_file: .env
+    depends_on:
+      - web
+    volumes:
+      - ./media:/app/media
+      - ./models:/app/models
+    devices:
+      - /dev/video0:/dev/video0
+    privileged: true
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+
+volumes:
+  postgres_data:
